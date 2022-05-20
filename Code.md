@@ -47,22 +47,15 @@ public void SetMethod()
 ```
 - 다음 예와 같이, 메소드 인자 및 변수에는 카멜 케이스(Camel case)를 사용하며 명사로 시작한다.
 ```cs
-public float timer;
-public int count;
-public string name;
+public float myTimer;
+public int myCount;
+public string myName;
 ```
-- 다음 예와 같이, 지역변수 및 private 변수명은 '_'를 추가한다.
+- 다음 예와 같이, private 변수명은 '_'를 추가한다.
 ```cs
-private float _timer;
-private int _count;
-private string _name;
-```
-- 다음 예와 같이, 상수는 영문 대문자 스네이크 케이스(Snake case)를 사용한다.
-```cs
-const int SCORE10 = 10;
-const int SCORE20 = 20;
-const int SCORE30 = 30;
-const int SCORE40 = 40;
+private float _myTimer;
+private int _myCount;
+private string _myName;
 ```
 - 다음 예와 같이, 열거형 키워드는 영문 대문자를 사용한다.
 ```cs
@@ -97,7 +90,7 @@ private string _name = "myString";
 // Bad:
 public float timer = 1.2f;
 public int count;
-public string name = "myString;
+public string name = "myString";
 
 // Good:
 public float timer = 1.2f;
@@ -141,6 +134,16 @@ a -= b;
 a *= b;
 a /= b;
 a %= b;
+```
+  - 다음 예와 같이, 성능개선을 위해 가능한 경우 산술연산자를 대체한다.
+```cs
+// Bad:
+int count = 1;
+int num = count / 10;
+
+// Good:
+int count = 1;
+int num = count * 0.1;
 ```
 
 ### 📢 참고문서
