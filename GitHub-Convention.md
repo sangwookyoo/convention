@@ -1,4 +1,4 @@
-# 📌 Git - Commit message convention
+# 📌 GitHub - Commit message convention
 
 ### 1. Commit Message Structure
 ```
@@ -8,7 +8,8 @@ Footer
 ```
 
 ### 2. Commit Type
-- Feat: 새로운 기능 추가/수정/삭제
+- Feat: 새로운 기능 추가/삭제
+- Update: 기능 수정
 - Fix: 버그 수정
 - Docs: 문서 수정
 - Style: 코드에 영향을 주지 않는 변경사항
